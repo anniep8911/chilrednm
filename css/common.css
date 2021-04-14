@@ -1,0 +1,244 @@
+/*common(글자관련 모든것!)*/
+@import url('all.css');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poor+Story&family=Single+Day&display=swap');
+
+/*body*/
+body{
+    font-family: "Noto Sans KR","돋움","Noto Serif KR";
+    font-size: 14px;
+    line-height: 20px;
+    color: #666;
+    font-weight: 300;
+}
+
+/*글로벌헤더*/
+div.hdrWrap{}
+div.hdrWrap>.header{
+    overflow: hidden;
+    width: 90%;
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+
+
+div.hdrWrap>.header>.logo{
+    width: 350px;
+    height: 40px;
+    background-image: url(../img/logo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    
+    float: left;
+}
+div.hdrWrap>.header>ul{
+    float: right;
+}
+div.hdrWrap>.header>ul>li{
+    float: left;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 0 30px;
+    border-left: 1px solid black;
+    color: #000;
+    margin-top: 10px;
+}
+div.hdrWrap>.header>ul>li:first-of-type{
+    border: 0;
+}
+
+/*글로벌 푸터*/
+div.ftrWrap{
+    margin-top: 120px;
+    background-image: url(../img/bg_cloud.png);
+}
+div.ftrWrap>.footer{
+    width: 90%;
+    max-width: 1080px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 80px 0;
+}
+div.ftrWrap>.footer>.fl{
+    float: left;
+}
+div.ftrWrap>.footer>.fl>.logo{
+    width: 360px;
+    height: 40px;
+    background-image: url(../img/logo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+div.ftrWrap>.footer>.fl>ul>li{
+    font-size: 14px;
+    line-height: 40px;
+}
+div.ftrWrap>.footer>.fl>ul>li>a{
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 18px;
+}
+div.ftrWrap>.footer>.fr{
+    float: right;
+}
+div.ftrWrap>.footer>.fr>.web{
+    margin-top: 40px;
+}
+div.ftrWrap>.footer>.fr>.web>select{
+    width: 100%;
+    height: 40px;
+    background-color: #000;
+    color: #fff;
+    font-size: 14px;
+    border: 0;
+}
+div.ftrWrap>.footer>.fr>.web>select>option{
+}
+div.ftrWrap>.footer>.fr>.sns{
+    font-size: 30px;
+    line-height: 80px;
+    width: 350px;
+    text-align:right;
+}
+
+div.logo{
+    position: relative;
+}
+div.logo>a{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    top: 0;left: 0;
+}
+
+
+
+/*글로벌메인*/
+div.mnWrap{
+    
+}
+div.mnWrap>.main{
+    width: 90%;
+    max-width: 1080px;
+    margin: 0 auto;    
+    position: relative;
+}
+div.mnWrap>.main>.image{
+    height: 1000px;
+    
+}
+div.mnWrap>.main>.header{
+    text-align: center;
+    position: absolute;
+    top: 200px; right: 0; left: 0;
+    color: #fff;
+    text-shadow: -3px 0 10px #2a7da3, 3px 0 10px #2a7da3, 3px 0 10px #2a7da3, -3px 0 10px #2a7da3;
+    font-family: "Single Day", "Poor Story","Noto Serif KR";
+}
+div.mnWrap>.main>.header>h2{
+    font-size: 48px;
+    line-height: 40px;
+    font-weight: 700;
+}
+div.mnWrap>.main>.header>h3{
+    line-height: 80px;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+/*글로벌 컨텐츠*/
+div.content{
+    width: 90%;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+div.content>.header>h2{
+    font-size: 22px;
+    line-height: 40px;
+    color: #000;
+    font-weight: 700;
+    text-align: center;
+    font-family: "Single Day","Poor Story","Noto Serif KR";
+}
+div.content>.section>.article>.segment>h2{
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 40px;
+}
+div.content>.section>.article>.segment>h3{
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 40px;
+}
+div.content>.section>.article>.segment>p{
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 300;
+}
+div.content>.section>.btn{
+    text-align: center;
+}
+div.content>.section>.btn>button{
+    margin-top: 40px;
+    width: 160px;
+    height: 40px;
+    border: 20px solid transparent;
+    border-image: url(../img/btn.png) 15 round;
+    padding-bottom: 15px;
+    border-radius: 20px;
+    background-color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+    font-family:"Poor Story","Single Day","Noto Serif KR";
+    
+}
+
+/*보더이미지 추가*/
+.bdrImg {
+  border: 20px solid transparent;
+  padding: 15px;
+  border-image: url(../img/crayon_line.png) 30 round;
+}
+
+*.clear::after{
+    display: block; content: ''; clear: both;
+}
+
+
+/*하단 페이징바*/
+div.pBar{
+    margin-top: 40px;
+}
+div.pBar>ul{
+    overflow: hidden;
+    width: 350px;
+    height: 40px;
+    background-image: url(../img/line.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    
+}
+div.pBar>ul>li{
+    width: 30px;
+    height: 30px;
+    border: 3px solid #8dccbf;
+    background-color: #fff;
+    border-radius: 50%;
+    float: left;
+    margin-top: 5px;
+    cursor: pointer;
+    
+}
+div.pBar>ul>li:first-of-type{
+    margin-left: 0;
+}
+div.pBar>ul>li:last-of-type{
+    margin-right: 0;
+}

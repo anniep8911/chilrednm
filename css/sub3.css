@@ -1,0 +1,112 @@
+/*메인*/
+div.mnWrap{
+    background-image: url(../img/sub3_main.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+div.mnWrap>.main{
+    height: 480px;
+}
+div.mnWrap>.main>.header{
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+/*게시판 상단*/
+div.board{
+    width: 90%;
+    max-width: 1080px;
+    margin: 0 auto;
+    margin-top: 120px;
+}
+div.board>.header{}
+div.board>.header>.btnGroup{
+    overflow: hidden;
+    width: 560px;
+    margin: 0 auto;
+}
+div.board .btn>button{
+    width: 160px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 20px;
+    margin: 0 10px;
+    color: #000;
+    font-weight: 600;
+    border: 0;
+    cursor: pointer;
+}
+div.board>.header>.btnGroup>.btn>button{
+    float: left;
+}
+div.board .b1>button{
+    background-color: #f2a8ff;
+}
+div.board .b2>button{
+    background-color: #fff799;
+}
+div.board .b3>button{
+    background-color: #b4ffa8;
+}
+div.board>.header>.result{
+    text-align: right;
+    line-height: 40px;
+}
+div.board>.header>.search{
+    width: 560px;
+    margin: 40px auto 0 auto;
+    
+}
+div.board>.header>.search>input{
+    height: 40px;
+    width: 340px;
+    margin-left: 10px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    text-align: center;
+    color: #999;
+}
+div.board>.header>.search>button{
+    width: 160px;
+    height: 40px;
+    border: 20px solid transparent;
+    border-image: url(../img/btn.png) 15 round;
+    padding-bottom: 15px;
+    border-radius: 20px;
+    background-color: #fff;
+    font-weight: 700;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+/*게시판*/
+
+div.board>.section>table{
+    width: 100%;
+}
+div.board>.section>table>tbody{}
+div.board>.section>table>tbody>tr:first-of-type{
+    background-color: #ccc;
+}
+div.board>.section>table>tbody>tr:first-of-type{
+    font-weight: 700;
+}
+div.board>.section>table>tbody>tr>td{
+    line-height: 40px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+div.board>.section>table>tbody>tr>td:nth-of-type(2){
+    width: 180px;
+}
+
+div.pBar>ul>li:nth-of-type(1){
+    width: 40px;
+    height: 40px;
+    background-image: url(../img/btn_cen.png);
+    background-size: cover;
+    background-position: center;
+    border: 0;
+    margin-top: 0;    
+}
